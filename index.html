@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Word Builder: Listen and Spell</title><link rel="stylesheet" href="styles.css"></head>
+<body><div class="sky" aria-hidden="true"><span class="cl c1">☁️</span><span class="cl c2">☁️</span><span class="bl b1">🎈</span><span class="bl b2">🎈</span><span class="bl b3">🎈</span><span class="st s1">⭐</span><span class="st s2">✨</span></div>
+<main>
+<section id="home" class="screen"><div class="mascots" aria-hidden="true">🐱 🐶 🐸</div><h1>Word Builder</h1><p class="lead">Listen to the word, then drag the letters to spell it!</p>
+<h2 class="sr">Choose a level</h2><div id="levels" class="levels"></div>
+<div class="row"><button class="btn ghost" id="sound" aria-pressed="true">🔊 Sound on</button><button class="btn ghost" id="calm" aria-pressed="false">🌀 Calm animations: off</button><a class="btn ghost" href="admin.html">⚙️ Admin</a></div><p id="totals" class="small"></p></section>
+<section id="game" class="screen" hidden>
+<header class="bar"><button class="btn ghost" id="quit">← Levels</button><div class="prog" role="progressbar" aria-label="Progress" id="prog"><i id="progfill"></i></div><div class="hud"><span id="stars">⭐ 0</span><span id="score">0 pts</span></div></header>
+<div class="card audio"><button class="speaker" id="speak" aria-label="Play the word again">🔊</button><p id="q">Listen and spell the word</p><p id="msg" class="msg" role="status" aria-live="polite"></p></div>
+<div id="slots" class="slots" aria-label="Answer"></div>
+<div id="tiles" class="tiles" aria-label="Letter choices"></div>
+<div class="row"><button class="btn" id="hint">💡 Hint</button><button class="btn" id="reset">↺ Reset answer</button><button class="btn go" id="next" hidden>Next →</button></div>
+<div id="reveal" class="reveal" hidden></div></section>
+<section id="done" class="screen" hidden><div class="mascots" aria-hidden="true">🏆</div><h1>All done!</h1><p class="lead" id="summary"></p><div class="row"><button class="btn go" id="again">Play again</button><button class="btn ghost" id="menu">Levels</button></div></section>
+</main><div id="fx" aria-hidden="true"></div>
+<script src="common.js"></script><script src="app.js"></script></body></html>
